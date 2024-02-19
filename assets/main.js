@@ -3,5 +3,15 @@ let kmToDo = Number(prompt("Inserisci i km che desideri percorrere"));
 console.log(kmToDo);
 
 // chiedere al passeggero (utente) la propria età
+
 const userAge = Number(prompt("Inserisci la tua età"));
 console.log(userAge);
+
+// ____________________________________ //
+
+// calcolare il prezzo totale del viaggio:
+ // = 0.21€/km
+
+ let pricePerKm = (0.21)
+ console.log(pricePerKm * kmToDo);
+
