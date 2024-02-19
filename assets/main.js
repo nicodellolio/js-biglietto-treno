@@ -32,18 +32,18 @@ console.log(userAge);
 if (userAge < 18) {
     console.log((tickeFullPrice / 100) * 80);
     let ticketDiscount20 = ((tickeFullPrice / 100) * 80);
-    alert(ticketDiscount20 + "€");
+    alert(ticketDiscount20.toFixed(2) + "€");
 
     // sottrare uno sconto del 40% per gli anziani (over 65)
 } else if (userAge >= 65) {
     console.log((tickeFullPrice / 100) * 60);
     let ticketDiscount40 = ((tickeFullPrice / 100) * 60);
-    alert(ticketDiscount40 + "€");
+    alert(ticketDiscount40.toFixed(2) + "€");
 
     // nessuno sconto per i passegeri adulti (18-64)
 } else {
     console.log(tickeFullPrice);
-    alert(tickeFullPrice + "€");
+    alert(tickeFullPrice.toFixed(2) + "€");
 }
 
 // ____________________________________ //
