@@ -13,5 +13,19 @@ console.log(userAge);
  // = 0.21€/km
 
  let pricePerKm = (0.21)
- console.log(pricePerKm * kmToDo);
+
+ let tickeFullPrice = (pricePerKm * kmToDo);
+ console.log(tickeFullPrice);
+
+
+// sottrarre sconto per categoria
+ // applicare uno sconto del 20% per i minorenni
+ if (userAge < 18) {
+    console.log((tickeFullPrice / 100) * 80);
+ }
+
+ // applicare uno sconto del 20% per i minorenni
+ if (userAge >= 65) {
+    console.log((tickeFullPrice / 100) * 60);
+ }
 
